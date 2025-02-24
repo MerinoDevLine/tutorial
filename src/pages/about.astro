@@ -1,0 +1,57 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout >
+  <section id="links">
+    <a href="/" class="button">Inicio</a>
+    <a href="/about/" class="button">Sobre mi</a>
+  </section>
+   
+    <h1>Mi sitio Astro</h1>
+    <h1>Sobre mi</h1>
+    <h2>... ¡y mi nuevo sitio Astro!</h2>
+  
+    <p>Estoy trabajando en el tutorial introductorio de Astro. Esta es la segunda página de mi sitio web, ¡y es la primera que he construido yo mismo!</p>
+  
+    <p>Este sitio se irá actualizando a medida que vaya completando más partes del tutorial, ¡así que no dejes de visitarlo para ver cómo va mi viaje!</p>
+</Layout>
+
+<style>
+    #links {
+    display: flex;
+    gap: 16px;
+  }
+
+  #links a {
+    display: flex;
+    align-items: center;
+    padding: 10px 12px;
+    color: #111827;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  #links a:hover {
+    color: rgb(78, 80, 86);
+  }
+
+  #links a svg {
+    height: 1em;
+    margin-left: 8px;
+  }
+
+  #links a.button {
+    color: white;
+    background: linear-gradient(83.21deg, #3245ff 0%, #bc52ee 100%);
+    box-shadow:
+      inset 0 0 0 1px rgba(255, 255, 255, 0.12),
+      inset 0 -2px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 10px;
+  }
+
+  #links a.button:hover {
+    color: rgb(230, 230, 230);
+    box-shadow: none;
+  }
+</style>
