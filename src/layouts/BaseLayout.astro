@@ -10,7 +10,7 @@ const textCase = "Uppercase";
 ---
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8" Content-Type="text/html" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
@@ -19,7 +19,7 @@ const textCase = "Uppercase";
   <body id="BaseLayout">
     <Header />
     <div class="main-content">
-      <h1>{pageTitle}</h1>
+      <h1 class="page-title">{pageTitle}</h1>
       <slot />
     </div>
     
