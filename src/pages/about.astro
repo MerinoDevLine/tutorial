@@ -1,5 +1,8 @@
 ---
+import Navigation from "../components/Navigation.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
 import Layout from "../layouts/Layout.astro";
+import '../styles/global.css';
 
 const pageTitle = "Sobre mí";
 const identity = {
@@ -14,17 +17,9 @@ const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
 const happy = true;
 const finished = false;
 const goal = 3;
-
-const skillColor = "navy";
-const fontWeight = "bold";
-const textCase = "Uppercase";
 ---
 
-<Layout>
-  <section id="links">
-    <a href="/" class="button">Inicio</a>
-    <a href="/about/" class="button">{pageTitle}</a>
-  </section>
+<BaseLayout>
 
   <h1>{pageTitle}</h1>
   <h2>... ¡y mi nuevo sitio Astro!</h2>
@@ -67,9 +62,9 @@ const textCase = "Uppercase";
       <p>My goal is not 3 days.</p>
     )
   }
-</Layout>
+</BaseLayout>
 
-<style define:vars={{skillColor, fontWeight, textCase}}>
+<style>
   h1 {
     color: purple;
     font-size: 2.2rem;

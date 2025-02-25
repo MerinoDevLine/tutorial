@@ -1,8 +1,11 @@
 ---
+import Navigation from "../components/Navigation.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
 import Layout from "../layouts/Layout.astro";
+import '../styles/global.css';
 ---
 
-<Layout>
+<BaseLayout>
   <h1>Keep updated with our Blog!</h1>
   <section class="news">
     <h3>Updated Release Intentions</h3>
@@ -13,4 +16,4 @@ import Layout from "../layouts/Layout.astro";
     </ul>
     
   </section>
-</Layout>
+</BaseLayout>

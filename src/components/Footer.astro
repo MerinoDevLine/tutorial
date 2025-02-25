@@ -1,0 +1,31 @@
+---
+import Social from "./Social.astro";
+
+
+const platform = ["github", "instagram", "youtube"];
+const username = "withastro";
+---
+
+<footer>
+  <div class="footer-social">Learn more about my projects on 
+ 
+    <div class="social-media-links">
+      { platform.map(item => <Social platform={item} username={username} ></Social>) }
+    </div>
+    </div>
+</footer>
+
+<style>
+  footer {
+    padding-inline: 0.5rem;
+    padding-block: 0.5rem;
+    background: linear-gradient(45deg, #ffc0cb80, #80008080);
+    font-style: oblique;
+    display: flex;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+  }
+
+  
+</style>

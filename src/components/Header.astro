@@ -1,0 +1,22 @@
+---
+import Navigation from "./Navigation.astro";
+import astroLogo from '../assets/astro.svg'
+import Hamburger from "./Hamburger.astro";
+---
+
+<header id="hero">
+  <a href="https://astro.build"
+				><img src={astroLogo.src} width="115" height="48" alt="Astro Homepage" /></a
+			>
+  <Hamburger />
+  <Navigation />
+</header>
+
+<style>
+  #hero {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+</style>
